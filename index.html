@@ -4,161 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centro Balistica Forense - MEDA</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #e0e0e0;
-      line-height: 1.6;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      background-color: #1b1b1b;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #00aaff;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #ccc;
-    }
-
-    .info-box {
-      background-color: #2a2a2a;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 40px;
-    }
-
-    .info-box h2 {
-      color: #00aaff;
-      margin-bottom: 10px;
-    }
-
-    .info-box p a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-
-    .info-box p a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #00aaff;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #333;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      margin-left: 20px;
-    }
-
-    form label {
-      display: block;
-      margin: 10px 0;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      background: #2a2a2a;
-      border: 1px solid #444;
-      color: #e0e0e0;
-      border-radius: 5px;
-    }
-
-    .button {
-      display: inline-block;
-      background-color: #00aaff;
-      color: #fff;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #0088cc;
-    }
-
-    .social {
-      margin-top: 20px;
-    }
-
-    .social a {
-      color: #00aaff;
-      text-decoration: none;
-      margin-right: 15px;
-    }
-
-    .social a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 20px;
-      }
-
-      header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="logoe nome dell'azioenda.png" alt="Logo Centro Balistica Forense" style="max-width: 180px; height: auto; margin: 0 auto 20px; display: block;">
+      <img src="logoe nome dell'azioenda.png" alt="Logo Centro Balistica Forense" class="logo" />
       <h1>Centro Balistica Forense</h1>
       <p>Consulenti Tecnici Professionali – MEDA Balistica Forense</p>
     </header>
 
-    <div class="info-box">
+    <section class="info-box">
       <h2>Contatti</h2>
       <p><strong>Indirizzo:</strong> Via Appia, 192 – Montesarchio (BN)</p>
-      <p><strong>Ottavio Menichelli:</strong> <a href="tel:+393498445445">+39 349 8445445</a></p>
-      <p><strong>Carmine D'Angelo:</strong> <a href="tel:+393249209359">+39 324 9209359</a></p>
+      <p><strong>Ottavio Menichelli:</strong> <a href="tel:+393498445445">+39 349 8445445</a></p>
+      <p><strong>Carmine D'Angelo:</strong> <a href="tel:+393249209359">+39 324 9209359</a></p>
       <p><strong>Email PEC:</strong> <a href="mailto:menichelligioacchino@pec.it">menichelligioacchino@pec.it</a></p>
       <p><strong>Email:</strong> <a href="mailto:meda.balisticaforense@gmail.com">meda.balisticaforense@gmail.com</a></p>
-    </div>
+    </section>
 
     <section>
       <h2>Chi Siamo</h2>
@@ -178,10 +41,10 @@
 
     <section>
       <h2>Contattaci</h2>
-      <form action="mailto:meda.balisticaforense@gmail.com" method="post" enctype="text/plain">
-        <label>Nome:<input type="text" name="Nome" required></label>
-        <label>Email:<input type="email" name="Email" required></label>
-        <label>Messaggio:<textarea name="Messaggio" rows="5" required></textarea></label>
+      <form>
+        <label>Nome:<input type="text" name="nome" required /></label>
+        <label>Email:<input type="email" name="email" required /></label>
+        <label>Messaggio:<textarea name="messaggio" rows="5" required></textarea></label>
         <button type="submit" class="button">Invia</button>
       </form>
 
