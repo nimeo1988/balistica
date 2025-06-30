@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consulenza Balistica Professionale</title>
+  <title>Centro Balistica Forense - MEDA</title>
   <style>
     * {
       margin: 0;
@@ -43,6 +43,27 @@
       color: #ccc;
     }
 
+    .info-box {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .info-box h2 {
+      color: #00aaff;
+      margin-bottom: 10px;
+    }
+
+    .info-box p a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    .info-box p a:hover {
+      text-decoration: underline;
+    }
+
     section {
       margin-bottom: 40px;
     }
@@ -54,6 +75,25 @@
       padding-bottom: 5px;
     }
 
+    ul {
+      margin-left: 20px;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background: #2a2a2a;
+      border: 1px solid #444;
+      color: #e0e0e0;
+      border-radius: 5px;
+    }
+
     .button {
       display: inline-block;
       background-color: #00aaff;
@@ -62,6 +102,8 @@
       text-decoration: none;
       border-radius: 5px;
       margin-top: 20px;
+      border: none;
+      cursor: pointer;
       transition: background 0.3s ease;
     }
 
@@ -69,15 +111,25 @@
       background-color: #0088cc;
     }
 
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
+      color: #00aaff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #777;
       margin-top: 40px;
-    }
-
-    ul {
-      margin-left: 20px;
     }
 
     @media (max-width: 768px) {
@@ -94,9 +146,18 @@
 <body>
   <div class="container">
     <header>
-      <h1>Consulenza Balistica Professionale</h1>
-      <p>Analisi tecnica – Perizie legali – Supporto investigativo</p>
+      <h1>Centro Balistica Forense</h1>
+      <p>Consulenti Tecnici Professionali – MEDA Balistica Forense</p>
     </header>
+
+    <div class="info-box">
+      <h2>Contatti</h2>
+      <p><strong>Indirizzo:</strong> Via Appia, 192 – Montesarchio (BN)</p>
+      <p><strong>Ottavio Menichelli:</strong> <a href="tel:+393498445445">+39 349 8445445</a></p>
+      <p><strong>Carmine D'Angelo:</strong> <a href="tel:+393249209359">+39 324 9209359</a></p>
+      <p><strong>Email PEC:</strong> <a href="mailto:menichelligioacchino@pec.it">menichelligioacchino@pec.it</a></p>
+      <p><strong>Email:</strong> <a href="mailto:meda.balisticaforense@gmail.com">meda.balisticaforense@gmail.com</a></p>
+    </div>
 
     <section>
       <h2>Chi Siamo</h2>
@@ -113,8 +174,26 @@
         <li>Redazione di relazioni tecniche e CTU</li>
       </ul>
     </section>
+
+    <section>
+      <h2>Contattaci</h2>
+      <form action="mailto:meda.balisticaforense@gmail.com" method="post" enctype="text/plain">
+        <label>Nome:<input type="text" name="Nome" required></label>
+        <label>Email:<input type="email" name="Email" required></label>
+        <label>Messaggio:<textarea name="Messaggio" rows="5" required></textarea></label>
+        <button type="submit" class="button">Invia</button>
+      </form>
+
+      <div class="social">
+        <h3>Seguici sui social</h3>
+        <a href="https://www.facebook.com/tuapagina" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/tuoprofilo" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/tuoprofilo" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
     <footer>
-      &copy; 2025 Consulenza Balistica | Tutti i diritti riservati
+      &copy; 2025 Centro Balistica Forense - MEDA | Tutti i diritti riservati
     </footer>
   </div>
 </body>
