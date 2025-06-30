@@ -107,6 +107,7 @@ input, textarea {
   border-radius: 5px;
 }
 
+/* Pulsante */
 .button {
   background-color: #00aaff;
   color: #fff;
@@ -145,6 +146,40 @@ footer {
   margin-top: 40px;
 }
 
+/* Sezione Perizie Balistiche Forensi */
+.perizie-balistiche {
+  margin-bottom: 40px;
+}
+
+.perizie-balistiche h2 {
+  color: #00aaff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.perizie-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.perizie-content img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.perizie-content p {
+  flex: 1;
+  min-width: 250px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -156,5 +191,15 @@ footer {
 
   .logo {
     max-width: 140px;
+  }
+
+  /* Perizie Balistiche - mobile */
+  .perizie-content {
+    flex-direction: column;
+  }
+
+  .perizie-content img {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
