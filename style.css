@@ -37,4 +37,168 @@ header h1 {
 }
 
 header p {
-  font-size: 1.1rem
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.info-box {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.info-box h2 {
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.info-box p a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.info-box p a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #00aaff;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #00aaff;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.button:hover {
+  background-color: #0088cc;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  color: #00aaff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* Google Maps */
+.map-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,170,255,0.6);
+  margin-bottom: 40px;
+}
+
+/* Perizie Balistiche Forensi e Ricostruzione Traiettorie (stesso stile) */
+.perizie-balistiche,
+.ricostruzione-traiettorie {
+  margin-bottom: 40px;
+}
+
+.perizie-balistiche h2,
+.ricostruzione-traiettorie h2 {
+  color: #00aaff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.perizie-content,
+.ricostruzione-traiettorie .perizie-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.perizie-content img,
+.ricostruzione-traiettorie .perizie-content img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.perizie-content p,
+.ricostruzione-traiettorie .perizie-content p {
+  flex: 1;
+  min-width: 250px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .perizie-content,
+  .ricostruzione-traiettorie .perizie-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .perizie-content img,
+  .ricostruzione-traiettorie .perizie-content img {
+    max-width: 100%;
+  }
+}
