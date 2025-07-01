@@ -1,7 +1,5 @@
-/* Reset base */
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   background-color: #0d1a33;
   color: #ffffff;
@@ -14,114 +12,117 @@ body {
   padding: 1rem;
 }
 
-/* Header con sfondo chiaro */
 .header-centered {
   text-align: center;
-  background-color: #e8eef7; /* azzurrino chiaro */
-  color: #000000;
+  background-color: #e8eef7;
   padding: 2rem;
   border-radius: 1rem;
 }
 
-.logo {
-  max-width: 150px;
+.header-centered img {
+  width: 150px;
   height: auto;
   margin-bottom: 1rem;
 }
 
-/* Sezioni */
-section {
+.header-centered h1,
+.header-centered h2,
+.header-centered p {
+  color: #000000;
+  margin: 0.5rem 0;
+}
+
+.info-box {
+  background-color: #1e2a47;
+  padding: 1.5rem;
   margin-top: 2rem;
+  border-radius: 1rem;
 }
 
-h1, h2, h3 {
-  color: #ffffff;
-  margin-bottom: 1rem;
+.info-box h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
 }
 
-h1 {
-  font-size: 2rem;
+a {
+  color: #66aaff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 2.5rem;
 }
 
 h2 {
-  font-size: 1.8rem;
-}
-
-h3 {
   font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
-/* Box Informazioni */
-.info-box {
-  background-color: #1a2b4c;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  margin-top: 2rem;
-}
-
-/* Perizie */
 .perizie-balistiche {
-  margin-top: 2rem;
-  background-color: #1f2e4d;
-  padding: 1rem;
-  border-radius: 1rem;
+  margin-bottom: 3rem;
 }
 
 .perizie-content {
   display: flex;
   align-items: center;
   gap: 2rem;
+  background-color: #1e2a47;
+  padding: 1.5rem;
+  border-radius: 1rem;
   flex-wrap: wrap;
 }
 
 .perizie-content img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 1rem;
+  width: 280px;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.perizie-content div {
-  flex: 1;
+.perizie-content h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
 }
 
-/* Mappa */
-.map-container {
-  margin-top: 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
+.map-container iframe {
+  border: none;
+  border-radius: 0.5rem;
 }
 
-/* Form */
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 1rem;
+  background-color: #1e2a47;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-input, textarea {
-  padding: 0.8rem;
-  border-radius: 0.5rem;
+input,
+textarea {
+  padding: 0.5rem;
   border: none;
+  border-radius: 0.3rem;
   font-size: 1rem;
 }
 
 .button {
-  padding: 0.8rem;
-  font-size: 1rem;
-  background-color: #003366;
-  color: #ffffff;
+  background-color: #66aaff;
+  color: white;
+  padding: 0.75rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #0055aa;
+  background-color: #5599dd;
 }
 
-/* Social */
 .social {
   margin-top: 2rem;
 }
@@ -129,26 +130,19 @@ input, textarea {
 .social a {
   display: inline-block;
   margin-right: 1rem;
-  color: #66ccff;
-  text-decoration: none;
+  color: #66aaff;
 }
 
-.social a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
 footer {
   text-align: center;
   margin-top: 3rem;
-  padding: 1rem;
-  border-top: 1px solid #444;
+  padding: 1rem 0;
   font-size: 0.9rem;
-  color: #bbbbbb;
+  color: #cccccc;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Responsive layout per dispositivi mobili */
+@media screen and (max-width: 768px) {
   .perizie-content {
     flex-direction: column;
     align-items: flex-start;
@@ -156,18 +150,6 @@ footer {
 
   .perizie-content img {
     width: 100%;
-    height: auto;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
+    max-width: 100%;
   }
 }
