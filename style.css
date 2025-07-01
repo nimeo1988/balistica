@@ -1,51 +1,80 @@
 body {
   font-family: Arial, sans-serif;
-  color: #e0e0e0;
   background-color: #121212;
+  color: #eeeeee;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
 
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 header img {
   max-width: 150px;
-  display: block;
+  height: auto;
   margin-bottom: 10px;
 }
 
 h1, h2, h3 {
-  color: #f5a623; /* un arancio caldo per i titoli */
+  color: #f5a623; /* Colore arancio */
 }
 
 .info-box {
-  background-color: #1f1f1f;
-  padding: 15px;
+  background-color: #1e1e1e;
+  padding: 20px;
   border-radius: 8px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px #f5a623a0;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  color: #f5a623;
+}
+
+.info-box p {
+  margin: 8px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 10px;
 }
 
 .perizie-balistiche {
-  background-color: #1f1f1f;
+  background-color: #1e1e1e;
   padding: 20px;
-  margin-bottom: 30px;
   border-radius: 8px;
+  box-shadow: 0 0 15px #f5a623a0;
 }
 
 .perizie-content {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .perizie-content img {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 0 10px #f5a623a0;
   flex-shrink: 0;
@@ -53,21 +82,26 @@ h1, h2, h3 {
 
 .perizie-content div {
   flex: 1;
+  min-width: 250px;
 }
 
-a {
-  color: #f5a623;
-  text-decoration: none;
+.map-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 0 15px #f5a623a0;
 }
 
-a:hover {
-  text-decoration: underline;
+form {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #f5a623a0;
+  max-width: 600px;
+  margin-bottom: 30px;
 }
 
 form label {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: #f5a623;
 }
 
@@ -75,39 +109,54 @@ form input[type="text"],
 form input[type="email"],
 form textarea {
   width: 100%;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
   border: none;
-  font-size: 1em;
+  border-radius: 6px;
+  background-color: #333333;
+  color: #eeeeee;
+  font-size: 16px;
 }
 
-form textarea {
-  resize: vertical;
-}
-
-.button {
-  margin-top: 15px;
+form button.button {
   background-color: #f5a623;
   color: #121212;
+  padding: 12px 25px;
   border: none;
-  padding: 10px 20px;
+  border-radius: 6px;
   cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #d18f00;
+form button.button:hover {
+  background-color: #d18e0a;
+}
+
+.social {
+  color: #eeeeee;
+}
+
+.social h3 {
+  color: #f5a623;
+  margin-bottom: 10px;
 }
 
 .social a {
+  color: #f5a623;
   margin-right: 15px;
+  text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #d18e0a;
 }
 
 footer {
   text-align: center;
-  margin: 40px 0 20px;
-  color: #777;
-  font-size: 0.9em;
+  padding: 20px 0;
+  color: #777777;
+  font-size: 14px;
 }
