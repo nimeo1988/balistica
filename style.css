@@ -32,24 +32,11 @@ body {
 
 /* INFO BOX (CONTATTI) */
 .info-box {
-  background-color: #003366; /* Sfondo blu elegante */
-  color: white; /* Tutto il testo in bianco */
+  background-color: #003366; /* blu elegante */
+  color: white;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Ombra azzurra */
-}
-
-.info-box p,
-.info-box h2,
-.info-box a,
-.info-box strong {
-  color: white !important; /* Forza tutto bianco */
-  text-decoration: none;
-}
-
-.info-box a:hover {
-  text-decoration: underline;
 }
 
 /* SEZIONI GENERICHE */
