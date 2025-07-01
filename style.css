@@ -25,6 +25,7 @@ header img {
 h1 {
   color: #2196f3;
   margin: 10px 0 5px 0;
+  font-size: 36px;
 }
 
 h2 {
@@ -39,7 +40,6 @@ h3 {
   font-size: 24px;
   color: #2196f3;
   margin-bottom: 10px;
-  margin-top: 30px; /* Sposta il titolo in basso per allineare immagine e testo */
 }
 
 .info-box {
@@ -69,7 +69,7 @@ h3 {
 
 .perizie-content {
   display: flex;
-  align-items: flex-start; /* allinea in alto immagine e testo */
+  align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -80,7 +80,7 @@ h3 {
   border: 3px solid #2196f3;
   border-radius: 6px;
   object-fit: cover;
-  margin-top: 0;
+  margin-top: 18px; /* immagine leggermente più in basso rispetto al testo */
   flex-shrink: 0;
 }
 
@@ -90,69 +90,71 @@ h3 {
   line-height: 1.5;
 }
 
-section p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 10px;
+.map-container iframe {
+  border: 0;
+  border-radius: 8px;
 }
 
-/* Sezione Contattaci */
-
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
 
-label {
+form label {
+  display: block;
+  margin-bottom: 6px;
   font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 16px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
   padding: 8px;
-  border-radius: 4px;
+  margin-bottom: 15px;
+  border-radius: 5px;
   border: none;
   font-size: 16px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+form textarea {
   resize: vertical;
 }
 
-button.button {
+form button.button {
   background-color: #2196f3;
   color: white;
+  padding: 12px 25px;
   border: none;
-  padding: 12px;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-button.button:hover {
-  background-color: #1769aa;
+form button.button:hover {
+  background-color: #1976d2;
 }
 
 .social {
-  text-align: center;
   margin-top: 20px;
 }
 
 .social h3 {
-  color: #2196f3;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .social a {
+  margin-right: 15px;
   color: #2196f3;
-  margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 .social a:hover {
@@ -161,31 +163,9 @@ button.button:hover {
 
 footer {
   text-align: center;
-  margin-top: 40px;
   padding: 15px;
   font-size: 14px;
   color: #777;
   border-top: 1px solid #333;
-}
-
-/* Map container */
-.map-container {
-  margin-bottom: 40px;
-}
-
-/* Responsive */
-@media (max-width: 700px) {
-  .perizie-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .perizie-content img {
-    width: 100%;
-    height: auto;
-  }
-
-  .perizie-content div {
-    width: 100%;
-  }
+  margin-top: 40px;
 }
