@@ -1,170 +1,163 @@
 body {
   background-color: #121212;
-  color: #e0e0e0;
   font-family: Arial, sans-serif;
+  color: #eee;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 header img {
   max-width: 150px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-h1, h2, h3 {
-  color: #004080; /* blu classico */
-}
-
-h1 {
-  font-size: 2.5rem;
+  display: block;
   margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+header h1 {
+  color: #3498db; /* blu */
+  margin: 0 0 5px 0;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+header p {
+  margin-top: 0;
+  color: #ccc;
+  font-style: italic;
 }
 
 .info-box {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 40px;
-  box-shadow: 0 0 8px rgba(0, 64, 128, 0.5);
+  background-color: #1e1e1e;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.info-box h2 {
+  color: #3498db;
 }
 
 .info-box p {
   margin: 8px 0;
-  font-size: 1rem;
+}
+
+.info-box a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #3498db;
+  margin-bottom: 15px;
 }
 
 ul {
-  list-style-type: disc;
   padding-left: 20px;
-  font-size: 1.1rem;
 }
 
-.perizie-balistiche {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 64, 128, 0.5);
+ul li {
+  margin-bottom: 8px;
 }
 
-.perizie-content {
+.perizie-balistiche .perizie-content {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .perizie-balistiche img {
+  border: 3px solid #3498db; /* bordo blu */
+  border-radius: 8px;
   width: 250px;
   height: auto;
-  max-height: 180px;
-  object-fit: contain;
-  border: 3px solid #004080;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  display: block;
-  margin-top: 15px; /* Spostamento leggero verso il basso */
+  object-fit: cover;
+  margin-top: 12px; /* immagine leggermente più giù */
 }
 
-.perizie-content div {
+.perizie-balistiche .perizie-content div {
   flex: 1;
-  min-width: 250px;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #d0d0d0;
+}
+
+.perizie-balistiche h3 {
+  margin-top: 0;
+  color: #55aaff;
 }
 
 .map-container iframe {
   border: 0;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 64, 128, 0.5);
-  margin-bottom: 50px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto 40px;
-}
-
-label {
-  font-weight: bold;
-  font-size: 1rem;
-  color: #004080;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #004080;
-  font-size: 1rem;
-  background-color: #222;
-  color: #e0e0e0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-button.button {
-  background-color: #004080;
-  color: #fff;
-  padding: 12px 20px;
-  font-size: 1.1rem;
-  border: none;
+  background-color: #1e1e1e;
+  padding: 20px;
   border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ccc;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #eee;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form textarea::placeholder {
+  color: #777;
+}
+
+form button {
+  background-color: #3498db;
+  border: none;
+  padding: 12px 25px;
+  color: white;
   cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-button.button:hover {
-  background-color: #003366;
+form button:hover {
+  background-color: #2980b9;
 }
 
 .social {
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  color: #ccc;
 }
 
 .social h3 {
   margin-bottom: 10px;
-  color: #004080;
 }
 
 .social a {
-  margin: 0 10px;
-  color: #004080;
+  color: #3498db;
+  margin-right: 15px;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .social a:hover {
@@ -173,9 +166,16 @@ button.button:hover {
 
 footer {
   text-align: center;
-  padding: 20px 0;
-  border-top: 1px solid #004080;
-  color: #888;
+  padding: 15px 0;
+  color: #555;
   font-size: 0.9rem;
-  margin-top: 40px;
+  border-top: 1px solid #222;
 }
+
+/* Sezione Analisi su armi da fuoco e munizioni: immagine più giù */
+.perizie-balistiche.analisi-armi img {
+  margin-top: 25px;
+}
+
+/* Per uniformità, anche le altre immagini hanno margin-top:12px */
+
