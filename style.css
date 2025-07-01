@@ -1,176 +1,177 @@
-/* Stile generale pagina */
 body {
   background-color: #0d1a33;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #121212;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-/* Header centrato con logo */
 .header-centered {
   text-align: center;
-  padding: 20px 0;
+  background-color: #0d1a33; /* Sfondo blu scuro sotto logo e titoli */
+  padding: 30px 20px 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
-.header-centered .logo {
-  max-width: 180px;
-  height: auto;
+.logo {
+  max-width: 160px;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 15px auto;
 }
 
-/* Titoli principali */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.3rem;
-  color: #1a5fe3;
+.header-centered h1,
+.header-centered h2,
+.header-centered p {
+  color: white;
+  margin: 5px 0;
+  font-weight: 600;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  color: #1a5fe3;
+.info-box {
+  background-color: #1a263f;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  color: white;
 }
 
-h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  color: #1a5fe3;
+.info-box a {
+  color: #c8d8ff;
+  text-decoration: none;
 }
 
-/* Lista servizi */
-section ul {
-  list-style: none;
-  padding-left: 0;
+.info-box a:hover {
+  text-decoration: underline;
 }
 
-section ul li {
-  margin-bottom: 0.6rem;
-  font-size: 16px;
+section {
+  margin-bottom: 30px;
 }
 
-/* Sezioni perizie e servizi */
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 700;
+}
+
 .perizie-balistiche {
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
 }
 
 .perizie-content {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-  background-color: #1e2a47;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .perizie-content img {
-  width: 300px;
-  height: auto;
-  object-fit: contain;
-  border: 3px solid #1a5fe3;
-  border-radius: 1rem;
-  margin-top: 1rem; /* immagine leggermente più giù */
+  max-width: 300px;
+  border-radius: 6px;
+  flex-shrink: 0;
 }
 
 .perizie-content div {
-  flex: 1;
+  flex-grow: 1;
+  color: white;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.perizie-content h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .perizie-content {
+    flex-direction: column;
+  }
+
+  .perizie-content img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+button.button {
+  background-color: #2a3f75;
   color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-/* Mappe e contatti */
-.map-container {
-  margin: 2rem 0;
-  border-radius: 1rem;
-  overflow: hidden;
+button.button:hover {
+  background-color: #1d2c54;
 }
 
-/* Form contatti */
+footer {
+  text-align: center;
+  color: #bbb;
+  padding: 15px 0;
+  font-size: 0.9em;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+}
+
+/* Form Styling */
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 12px;
+  margin-top: 15px;
 }
 
 label {
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 600;
+  color: white;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  padding: 8px;
+  padding: 10px;
   border-radius: 5px;
   border: none;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
+  font-size: 1em;
 }
 
-textarea {
-  resize: vertical;
-}
-
-.button {
-  background-color: #1a5fe3;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 2px solid #2a3f75;
+  background-color: #222;
   color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-.button:hover {
-  background-color: #1450b3;
+.social {
+  margin-top: 20px;
+  color: white;
 }
 
-/* Social links */
 .social a {
-  color: #1a5fe3;
   margin-right: 15px;
+  color: #c8d8ff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .social a:hover {
   text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  color: #888;
-  font-size: 14px;
-  border-top: 1px solid #1a5fe3;
-  margin-top: 3rem;
-}
-
-/* Responsive mobile */
-@media screen and (max-width: 768px) {
-  .perizie-content {
-    flex-direction: column !important;
-    align-items: flex-start;
-  }
-
-  .perizie-content img {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
 }
