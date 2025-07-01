@@ -213,6 +213,41 @@ footer {
   margin: 0;
 }
 
+/* Nuova sezione Analisi su armi da fuoco e munizioni */
+.analisi-armi-munizioni {
+  margin-bottom: 40px;
+}
+
+.analisi-armi-munizioni h2 {
+  color: #00aaff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.analisi-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* immagine e testo affiancati */
+}
+
+.analisi-content img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.analisi-content p {
+  flex: 1;
+  min-width: 250px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -223,12 +258,14 @@ footer {
   }
 
   .perizie-content,
-  .ricostruzione-content {
+  .ricostruzione-content,
+  .analisi-content {
     flex-wrap: wrap; /* su schermi piccoli, immagine sopra testo */
   }
 
   .perizie-content img,
-  .ricostruzione-content img {
+  .ricostruzione-content img,
+  .analisi-content img {
     max-width: 100%;
     margin-bottom: 20px;
   }
