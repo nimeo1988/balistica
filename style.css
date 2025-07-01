@@ -1,6 +1,6 @@
 body {
   background-color: #121212;
-  color: #d4d4d4;
+  color: #ddd;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,135 +12,185 @@ body {
   padding: 20px;
 }
 
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 header img {
-  max-width: 150px;
-  display: block;
+  max-width: 180px;
+  height: auto;
   margin-bottom: 10px;
 }
 
 header h1 {
-  color: #0096ff; /* blu */
-  margin: 0 0 5px;
+  color: #0b61d0;
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 header p {
   font-style: italic;
-  margin-top: 0;
+  color: #bbb;
+  margin-top: 5px;
 }
 
 .info-box {
-  background-color: #1f1f1f;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  background-color: #222;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
 .info-box h2 {
-  color: #0096ff;
+  color: #0b61d0;
   margin-top: 0;
 }
 
 .info-box p {
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 .info-box a {
-  color: #0096ff;
+  color: #0b61d0;
   text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 section h2 {
-  color: #0096ff;
-  margin-top: 40px;
+  color: #0b61d0;
   margin-bottom: 15px;
+  border-bottom: 2px solid #0b61d0;
+  padding-bottom: 5px;
 }
 
-.perizie-balistiche .perizie-content {
+.perizie-balistiche {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.perizie-content {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-.perizie-balistiche img {
-  width: 200px;
+.perizie-content img {
+  width: 280px;
   height: auto;
-  border: 3px solid #0096ff; /* bordo blu */
+  border: 3px solid #0b61d0;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-top: 15px; /* immagine leggermente più in basso */
+  flex-shrink: 0;
 }
 
-.perizie-balistiche div h3 {
-  color: #0096ff;
+.perizie-content div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.perizie-content h3 {
+  color: #0b61d0;
   margin-top: 0;
 }
 
-.perizie-balistiche div p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-/* Specifica per la sezione Analisi su armi da fuoco e munizioni */
-.perizie-balistiche.analisi-armi .perizie-content img {
-  margin-top: 10px; /* immagine leggermente più bassa */
+ul li {
+  margin-bottom: 8px;
 }
 
-.map-container iframe {
-  border: 0;
-  border-radius: 8px;
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(11, 97, 208, 0.5);
+  margin-bottom: 40px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 30px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  color: #ddd;
 }
 
-label {
+form label {
+  display: block;
+  margin-bottom: 6px;
   font-weight: bold;
-  margin-bottom: 5px;
+  color: #0b61d0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-}
-
-.button {
-  background-color: #0096ff;
-  color: white;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  border-radius: 5px;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #0b61d0;
+  border-radius: 6px;
+  background-color: #1c1c1c;
+  color: #ddd;
   font-size: 1rem;
+  resize: vertical;
 }
 
-.button:hover {
-  background-color: #007acc;
+form button.button {
+  background-color: #0b61d0;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button.button:hover {
+  background-color: #094bb5;
+}
+
+.social {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .social h3 {
+  color: #0b61d0;
   margin-bottom: 10px;
-  color: #0096ff;
 }
 
 .social a {
-  color: #0096ff;
+  margin: 0 10px;
+  color: #0b61d0;
   text-decoration: none;
-  margin-right: 15px;
+  font-weight: bold;
+}
+
+.social a:hover {
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
   padding: 15px;
-  color: #666666;
+  background-color: #0b61d0;
+  color: white;
+  border-radius: 0 0 8px 8px;
   font-size: 0.9rem;
-  border-top: 1px solid #333333;
   margin-top: 40px;
 }
