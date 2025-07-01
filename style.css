@@ -1,6 +1,6 @@
 body {
-  background-color: #121212;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
@@ -10,14 +10,15 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #121212;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  background-color: white;
+  box-shadow: none;
 }
 
 .header-centered {
   text-align: center;
   padding: 30px 20px 40px 20px;
   margin-bottom: 30px;
+  color: black;
 }
 
 .logo {
@@ -29,21 +30,21 @@ body {
 .header-centered h1,
 .header-centered h2,
 .header-centered p {
-  color: white;
+  color: black;
   margin: 5px 0;
   font-weight: 600;
 }
 
 .info-box {
-  background-color: #1a263f;
+  background-color: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 25px;
-  color: white;
+  color: black;
 }
 
 .info-box a {
-  color: #c8d8ff;
+  color: #0d1a33;
   text-decoration: none;
 }
 
@@ -55,14 +56,11 @@ section {
   margin-bottom: 30px;
 }
 
-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  color: white;
-  font-weight: 700;
-}
-
 .perizie-balistiche {
+  background-color: #0d1a33; /* blu scuro */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
   margin-bottom: 30px;
 }
 
@@ -77,12 +75,11 @@ section h2 {
   border-radius: 6px;
   flex-shrink: 0;
   border: 3px solid #4a6ef1; /* bordo blu chiaro */
-  box-shadow: 0 0 10px #4a6ef1aa; /* leggero alone/blu attorno */
+  box-shadow: 0 0 10px #4a6ef1aa;
 }
 
 .perizie-content div {
   flex-grow: 1;
-  color: white;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -122,14 +119,12 @@ button.button:hover {
 
 footer {
   text-align: center;
-  color: #bbb;
+  color: #555;
   padding: 15px 0;
   font-size: 0.9em;
   margin-top: 40px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #ccc;
 }
-
-/* Form Styling */
 
 form {
   display: flex;
@@ -140,7 +135,7 @@ form {
 
 label {
   font-weight: 600;
-  color: white;
+  color: black;
 }
 
 input[type="text"],
@@ -148,26 +143,28 @@ input[type="email"],
 textarea {
   padding: 10px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #ccc;
   font-size: 1em;
+  background-color: white;
+  color: black;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: 2px solid #2a3f75;
-  background-color: #222;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .social {
   margin-top: 20px;
-  color: white;
+  color: black;
 }
 
 .social a {
   margin-right: 15px;
-  color: #c8d8ff;
+  color: #0d1a33;
   text-decoration: none;
   font-weight: 600;
 }
