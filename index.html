@@ -15,6 +15,167 @@
 
   <!-- Collegamento al CSS esterno -->
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      max-width: 180px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #004080;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    .info-box {
+      background-color: #1e1e1e;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px #003366;
+    }
+
+    .info-box p {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* Layout per le sezioni con immagine + testo affiancati */
+    .perizie-balistiche .perizie-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .perizie-balistiche img {
+      width: 250px;
+      height: auto;
+      max-height: 180px;
+      object-fit: contain;
+      border: 3px solid #004080;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      display: block;
+      margin-top: 8px; /* leggero spostamento verso il basso */
+    }
+
+    .perizie-balistiche div {
+      flex: 1;
+    }
+
+    /* Form e social */
+    form {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #003366;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 12px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button.button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button.button:hover {
+      background-color: #0066cc;
+    }
+
+    .social {
+      text-align: center;
+    }
+
+    .social h3 {
+      margin-bottom: 10px;
+      color: #004080;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #4da6ff;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background-color: #1e1e1e;
+      color: #666;
+      font-size: 14px;
+      margin-top: 40px;
+      border-top: 1px solid #004080;
+    }
+
+    /* Mappa */
+    .map-container iframe {
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #003366;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -49,6 +210,7 @@
       </ul>
     </section>
 
+    <!-- Sezione Perizie Balistiche Forensi -->
     <section class="perizie-balistiche">
       <h2>Perizie Balistiche Forensi</h2>
       <div class="perizie-content">
@@ -63,6 +225,7 @@
       </div>
     </section>
 
+    <!-- Sezione Ricostruzione Traiettorie e Scene del Crimine -->
     <section class="perizie-balistiche">
       <h2>Ricostruzione di traiettorie e scene del crimine</h2>
       <div class="perizie-content">
@@ -76,6 +239,7 @@
       </div>
     </section>
 
+    <!-- Sezione Analisi Armi da Fuoco e Munizioni -->
     <section class="perizie-balistiche">
       <h2>Analisi su armi da fuoco e munizioni</h2>
       <div class="perizie-content">
@@ -89,6 +253,7 @@
       </div>
     </section>
 
+    <!-- Sezione Consulenza in ambito giudiziario -->
     <section class="perizie-balistiche">
       <h2>Consulenza in ambito giudiziario</h2>
       <div class="perizie-content">
@@ -96,12 +261,13 @@
         <div>
           <h3>Consulenza in ambito giudiziario</h3>
           <p>
-            Offriamo consulenza tecnica specialistica per supportare processi civili e penali. Il nostro team fornisce pareri esperti, valutazioni tecniche e assistenza alle parti coinvolte, garantendo un contributo fondamentale nelle fasi investigative e giudiziarie. La nostra esperienza assicura professionalità e rigore scientifico in ogni intervento.
+            Offriamo consulenza tecnica specialistica per supportare processi giudiziari civili e penali. Il nostro team valuta prove, fornisce pareri tecnici dettagliati e collabora con avvocati e forze dell’ordine per garantire un approccio scientifico e rigoroso. La nostra consulenza è fondamentale per chiarire aspetti tecnici complessi e orientare al meglio le decisioni in sede legale.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Sezione Redazione di relazioni tecniche e CTU -->
     <section class="perizie-balistiche">
       <h2>Redazione di relazioni tecniche e CTU</h2>
       <div class="perizie-content">
@@ -109,7 +275,7 @@
         <div>
           <h3>Redazione di relazioni tecniche e CTU</h3>
           <p>
-            Prepariamo relazioni tecniche dettagliate e perizie di Consulenza Tecnica d’Ufficio (CTU), utilizzate come prova nei procedimenti giudiziari. Ogni documento è redatto con rigore scientifico e chiarezza, garantendo supporto concreto a magistrati, avvocati e parti coinvolte.
+            Prepariamo relazioni tecniche dettagliate e consulenze tecniche d’ufficio (CTU) per supportare indagini e processi. Le nostre relazioni sono strutturate, chiare e conformi agli standard giudiziari, fornendo un contributo fondamentale per l’interpretazione delle evidenze balistiche e per la definizione dei fatti.
           </p>
         </div>
       </div>
