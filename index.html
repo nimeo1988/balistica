@@ -3,226 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contatti & Perizie</title>
-  <style>
-    /* RESET BASE */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* GENERALI */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: #111;
-      line-height: 1.6;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    /* HEADER */
-    .header-centered {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .logo {
-      max-width: 150px;
-      margin-bottom: 15px;
-    }
-
-    /* INFO BOX (CONTATTI) */
-    .info-box {
-      background-color: #003366; /* Sfondo blu elegante */
-      color: white; /* Tutto il testo in bianco */
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Ombra azzurra */
-      transition: box-shadow 0.3s ease;
-    }
-
-    .info-box p,
-    .info-box h2,
-    .info-box a,
-    .info-box strong {
-      color: white !important; /* Forza tutto bianco */
-      text-decoration: none;
-    }
-
-    .info-box a:hover {
-      text-decoration: underline;
-    }
-
-    /* SEZIONI GENERICHE */
-    section {
-      margin-bottom: 40px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* SEZIONE PERIZIE */
-    .perizie-balistiche {
-      background-color: #0d1a33;
-      color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-
-    .perizie-balistiche.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .perizie-content {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .perizie-content img {
-      max-width: 100%;
-      border-radius: 10px;
-      border: 2px solid #1e3a5f;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .perizie-content img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
-    }
-
-    /* MAPPA */
-    .map-container {
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    /* FORM */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .button {
-      padding: 10px 20px;
-      background-color: #003366;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .button:hover {
-      background-color: #005599;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #ccc;
-      color: #555;
-    }
-
-    /* RESPONSIVE */
-    @media (min-width: 768px) {
-      .perizie-content {
-        flex-direction: row;
-        align-items: center;
-      }
-
-      .perizie-content div {
-        flex: 1;
-      }
-
-      .perizie-content img {
-        max-width: 300px;
-        margin-right: 20px;
-      }
-    }
-  </style>
+  <title>Contatti</title>
+  <link rel="stylesheet" href="stile.css" />
 </head>
 <body>
   <div class="container">
-
     <header class="header-centered">
       <img src="logo.png" alt="Logo" class="logo" />
-      <h1>Contatti e Perizie</h1>
+      <h1>Contatti</h1>
     </header>
 
-    <section class="info-box">
+    <div class="info-box">
       <h2>Contatti</h2>
       <p><strong>Indirizzo:</strong> Via Appia, 192 – Montesarchio (BN)</p>
-      <p><strong>Ottavio Menichelli:</strong> +39 349 8445445</p>
-      <p><strong>Carmine D'Angelo:</strong> +39 324 9209359</p>
-      <p><strong>Email PEC:</strong> menichelligioacchino@pec.it</p>
-      <p><strong>Email:</strong> meda.balisticaforense@gmail.com</p>
-    </section>
+      <p><strong>Ottavio Menichelli:</strong> <a href="tel:+393498445445">+39 349 8445445</a></p>
+      <p><strong>Carmine D'Angelo:</strong> <a href="tel:+393249209359">+39 324 9209359</a></p>
+      <p><strong>Email PEC:</strong> <a href="mailto:menichelligioacchino@pec.it">menichelligioacchino@pec.it</a></p>
+      <p><strong>Email:</strong> <a href="mailto:meda.balisticaforense@gmail.com">meda.balisticaforense@gmail.com</a></p>
+    </div>
 
     <section class="perizie-balistiche">
-      <h2>Perizie Balistiche</h2>
       <div class="perizie-content">
+        <img src="perizia1.jpg" alt="Perizia Balistica 1" />
         <div>
-          <p>Descrizione delle perizie balistiche, servizi e altro testo...</p>
+          <h2>Perizie Balistiche</h2>
+          <p>Descrizione del servizio di perizia balistica...</p>
         </div>
-        <img src="perizia.jpg" alt="Perizia balistica" />
       </div>
     </section>
-
   </div>
 
   <footer>
-    &copy; 2025 Il tuo sito - Tutti i diritti riservati
+    &copy; 2025 Il Tuo Nome - Tutti i diritti riservati
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const faders = document.querySelectorAll("section, .perizie-balistiche");
-
-      const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-      };
-
-      const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, appearOptions);
-
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
