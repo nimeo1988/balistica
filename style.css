@@ -1,108 +1,173 @@
+/* Reset base */
 body {
-  background-color: #0d1a33;
-  color: #e0e0e0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d1a33;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem;
 }
 
+/* Header con sfondo chiaro */
 .header-centered {
   text-align: center;
-  margin-bottom: 40px;
+  background-color: #e8eef7; /* azzurrino chiaro */
+  color: #000000;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .logo {
-  width: 150px;
+  max-width: 150px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Sezioni */
+section {
+  margin-top: 2rem;
 }
 
 h1, h2, h3 {
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-a {
-  color: #6db3f2;
-  text-decoration: none;
+h1 {
+  font-size: 2rem;
 }
 
-a:hover {
-  text-decoration: underline;
+h2 {
+  font-size: 1.8rem;
 }
 
+h3 {
+  font-size: 1.6rem;
+}
+
+/* Box Informazioni */
+.info-box {
+  background-color: #1a2b4c;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+/* Perizie */
 .perizie-balistiche {
-  margin-bottom: 40px;
+  margin-top: 2rem;
+  background-color: #1f2e4d;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .perizie-content {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .perizie-content img {
   width: 300px;
-  height: auto;
-  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .perizie-content div {
   flex: 1;
 }
 
+/* Mappa */
+.map-container {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Form */
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 input, textarea {
-  padding: 8px;
-  border-radius: 4px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .button {
-  background-color: #2a5d9f;
-  color: #fff;
-  padding: 10px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #003366;
+  color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #194b7f;
+  background-color: #0055aa;
 }
 
+/* Social */
+.social {
+  margin-top: 2rem;
+}
+
+.social a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  font-size: 14px;
-  color: #aaa;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+  color: #bbbbbb;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .perizie-content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .perizie-content img {
     width: 100%;
+    height: auto;
   }
 
-  .perizie-content div {
-    text-align: center;
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
   }
 }
