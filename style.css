@@ -1,7 +1,9 @@
 body {
   background-color: #121212;
+  color: #e0e0e0;
   font-family: Arial, sans-serif;
-  color: #eee;
+  font-size: 16px; /* testo leggermente più grande */
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
@@ -21,142 +23,118 @@ header img {
 header h1 {
   color: #3498db; /* blu */
   margin: 0 0 5px 0;
+  font-size: 2.8rem; /* titolo principale più grande */
 }
 
 header p {
+  font-size: 1.1rem;
   margin-top: 0;
-  color: #ccc;
-  font-style: italic;
 }
 
 .info-box {
   background-color: #1e1e1e;
-  padding: 15px;
+  padding: 15px 20px;
+  border-radius: 8px;
   margin-bottom: 30px;
-  border-radius: 5px;
 }
 
 .info-box h2 {
   color: #3498db;
-}
-
-.info-box p {
-  margin: 8px 0;
-}
-
-.info-box a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.info-box a:hover {
-  text-decoration: underline;
-}
-
-section {
-  margin-bottom: 40px;
+  font-size: 2.2rem; /* titoli sezioni più grandi */
+  margin-bottom: 15px;
 }
 
 section h2 {
   color: #3498db;
-  margin-bottom: 15px;
+  font-size: 2.2rem; /* titoli sezioni più grandi */
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  margin-bottom: 8px;
+section h3 {
+  color: #3498db;
+  font-size: 1.6rem; /* sottotitoli un po’ più grandi */
+  margin-bottom: 12px;
 }
 
 .perizie-balistiche .perizie-content {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .perizie-balistiche img {
-  border: 3px solid #3498db; /* bordo blu */
+  width: 250px; /* dimensione immagine uniforme */
+  border: 3px solid #3498db; /* bordo blu attorno alle immagini */
   border-radius: 8px;
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  margin-top: 12px; /* immagine leggermente più giù */
+  margin-top: 10px; /* immagine leggermente più in basso */
 }
 
-.perizie-balistiche .perizie-content div {
-  flex: 1;
-}
-
-.perizie-balistiche h3 {
-  margin-top: 0;
-  color: #55aaff;
+.perizie-balistiche div p {
+  font-size: 1rem; /* testo dei paragrafi a 16px */
+  line-height: 1.5;
+  color: #dcdcdc;
 }
 
 .map-container iframe {
   border: 0;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 form {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
+  margin-top: 30px;
 }
 
 form label {
   display: block;
-  margin-bottom: 6px;
-  color: #ccc;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #3498db;
 }
 
-form input[type="text"],
-form input[type="email"],
+form input,
 form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
-  border: none;
   border-radius: 4px;
+  border: none;
   font-size: 1rem;
-  background-color: #333;
-  color: #eee;
-}
-
-form input[type="text"]::placeholder,
-form input[type="email"]::placeholder,
-form textarea::placeholder {
-  color: #777;
 }
 
 form button {
   background-color: #3498db;
+  color: #fff;
   border: none;
-  padding: 12px 25px;
-  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
   cursor: pointer;
-  font-size: 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 form button:hover {
-  background-color: #2980b9;
+  background-color: #2874b5;
 }
 
 .social {
-  margin-top: 30px;
-  color: #ccc;
+  margin-top: 20px;
+  color: #dcdcdc;
 }
 
 .social h3 {
+  color: #3498db;
   margin-bottom: 10px;
+  font-size: 1.4rem;
 }
 
 .social a {
-  color: #3498db;
   margin-right: 15px;
+  color: #3498db;
   text-decoration: none;
 }
 
@@ -165,17 +143,9 @@ form button:hover {
 }
 
 footer {
+  margin-top: 50px;
   text-align: center;
-  padding: 15px 0;
-  color: #555;
+  color: #777;
   font-size: 0.9rem;
-  border-top: 1px solid #222;
+  padding-bottom: 20px;
 }
-
-/* Sezione Analisi su armi da fuoco e munizioni: immagine più giù */
-.perizie-balistiche.analisi-armi img {
-  margin-top: 25px;
-}
-
-/* Per uniformità, anche le altre immagini hanno margin-top:12px */
-
