@@ -1,3 +1,27 @@
+
+.perizie-content {
+  display: flex;
+  flex-direction: row !important; /* forza riga su desktop */
+  align-items: center;
+  gap: 2rem;
+  background-color: #1e2a47;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .perizie-content {
+    flex-direction: column !important; /* colonna solo su mobile */
+    align-items: flex-start;
+  }
+
+  .perizie-content img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
