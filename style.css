@@ -30,7 +30,7 @@ header img {
 header h1 {
   font-size: 2.5rem; /* Titolo più grande */
   margin: 0;
-  color: #ff6700; /* Arancione brillante */
+  color: #4a90e2; /* Blu originale */
 }
 
 header p {
@@ -49,7 +49,7 @@ header p {
 }
 
 .info-box h2 {
-  color: #ff6700;
+  color: #4a90e2;
   margin-top: 0;
   font-size: 2rem;
 }
@@ -60,7 +60,7 @@ header p {
 }
 
 .info-box a {
-  color: #ff6700;
+  color: #4a90e2;
   text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ section {
 
 section h2 {
   font-size: 2rem;
-  color: #ff6700;
+  color: #4a90e2;
   margin-bottom: 15px;
 }
 
@@ -105,7 +105,7 @@ section h2 {
 }
 
 .perizie-content h3 {
-  color: #ff6700;
+  color: #4a90e2;
   font-size: 1.5rem;
   margin-top: 0;
 }
@@ -161,7 +161,7 @@ form textarea::placeholder {
 }
 
 form button.button {
-  background-color: #ff6700;
+  background-color: #4a90e2;
   color: #fff;
   padding: 12px 25px;
   border: none;
@@ -172,7 +172,7 @@ form button.button {
 }
 
 form button.button:hover {
-  background-color: #e65a00;
+  background-color: #3a78c2;
 }
 
 /* Social */
@@ -181,13 +181,13 @@ form button.button:hover {
 }
 
 .social h3 {
-  color: #ff6700;
+  color: #4a90e2;
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
 .social a {
-  color: #ff6700;
+  color: #4a90e2;
   margin-right: 15px;
   text-decoration: none;
   font-weight: 600;
