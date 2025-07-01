@@ -76,6 +76,8 @@ section h2 {
   max-width: 300px;
   border-radius: 6px;
   flex-shrink: 0;
+  border: 3px solid #4a6ef1; /* bordo blu chiaro */
+  box-shadow: 0 0 10px #4a6ef1aa; /* leggero alone/blu attorno */
 }
 
 .perizie-content div {
