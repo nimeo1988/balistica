@@ -7,11 +7,12 @@
 }
 
 body {
-  background-color: #0d1a33;  /* Sfondo blu scuro più morbido */
-  color: #e0e0e0;             /* Testo chiaro per contrasto */
+  background-color: #142a4d;  /* Blu scuro più soft e meno aggressivo */
+  color: #e0e0e0;
   line-height: 1.6;
   font-size: 16px;
 }
+
 
 .container {
   max-width: 1100px;
