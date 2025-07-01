@@ -1,71 +1,82 @@
 body {
   background-color: #121212;
-  color: #ddd;
+  color: #e0e0e0;
   font-family: Arial, sans-serif;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 20px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 header img {
-  max-width: 180px;
+  max-width: 150px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+  color: #004080; /* blu classico */
 }
 
 h1 {
-  color: #004080;
-  margin-bottom: 5px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 h2 {
-  color: #004080;
+  font-size: 2rem;
   margin-bottom: 15px;
-  border-bottom: 2px solid #004080;
-  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .info-box {
-  background-color: #1e1e1e;
-  padding: 15px 20px;
+  background-color: #1a1a1a;
+  padding: 20px;
   border-radius: 8px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 10px #003366;
+  margin-bottom: 40px;
+  box-shadow: 0 0 8px rgba(0, 64, 128, 0.5);
 }
 
 .info-box p {
   margin: 8px 0;
-}
-
-a {
-  color: #4da6ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  font-size: 1rem;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-/* Layout per le sezioni con immagine + testo affiancati */
-.perizie-balistiche .perizie-content {
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+}
+
+.perizie-balistiche {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 64, 128, 0.5);
+}
+
+.perizie-content {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .perizie-balistiche img {
@@ -77,57 +88,71 @@ section {
   border-radius: 8px;
   margin-bottom: 12px;
   display: block;
-  margin-top: 8px; /* leggero spostamento verso il basso */
+  margin-top: 15px; /* Spostamento leggero verso il basso */
 }
 
-.perizie-balistiche div {
+.perizie-content div {
   flex: 1;
+  min-width: 250px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #d0d0d0;
 }
 
-/* Form e social */
-form {
-  background-color: #1e1e1e;
-  padding: 20px;
+.map-container iframe {
+  border: 0;
   border-radius: 8px;
-  box-shadow: 0 0 10px #003366;
-  margin-bottom: 30px;
+  box-shadow: 0 0 8px rgba(0, 64, 128, 0.5);
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto 40px;
 }
 
 label {
-  display: block;
-  margin-bottom: 6px;
-  margin-top: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #004080;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
-  margin-bottom: 12px;
-  font-size: 16px;
-  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #004080;
+  font-size: 1rem;
+  background-color: #222;
+  color: #e0e0e0;
+}
+
+textarea {
+  resize: vertical;
 }
 
 button.button {
   background-color: #004080;
-  color: white;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
   border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
 button.button:hover {
-  background-color: #0066cc;
+  background-color: #003366;
 }
 
 .social {
   text-align: center;
+  margin-top: 20px;
 }
 
 .social h3 {
@@ -137,23 +162,20 @@ button.button:hover {
 
 .social a {
   margin: 0 10px;
-  color: #4da6ff;
-  font-weight: bold;
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social a:hover {
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  padding: 20px 10px;
-  background-color: #1e1e1e;
-  color: #666;
-  font-size: 14px;
-  margin-top: 40px;
+  padding: 20px 0;
   border-top: 1px solid #004080;
-}
-
-/* Mappa */
-.map-container iframe {
-  border: 0;
-  border-radius: 8px;
-  box-shadow: 0 0 15px #003366;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
