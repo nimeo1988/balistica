@@ -1,5 +1,5 @@
 body {
-  background-color: #0d1a33;
+  background-color: #121212;
   color: white;
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -16,9 +16,7 @@ body {
 
 .header-centered {
   text-align: center;
-  background-color: #0d1a33; /* Sfondo blu scuro sotto logo e titoli */
   padding: 30px 20px 40px 20px;
-  border-radius: 8px;
   margin-bottom: 30px;
 }
 
