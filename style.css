@@ -1,96 +1,106 @@
 body {
-  background-color: white;
-  color: black;
-  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* sfondo bianco pagina */
+  color: #000000; /* testo nero */
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background-color: white;
-  box-shadow: none;
 }
 
 .header-centered {
   text-align: center;
-  padding: 30px 20px 40px 20px;
-  margin-bottom: 30px;
-  color: black;
+  margin-bottom: 40px;
 }
 
 .logo {
-  max-width: 160px;
-  display: block;
-  margin: 0 auto 15px auto;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.header-centered h1,
-.header-centered h2,
-.header-centered p {
-  color: black;
-  margin: 5px 0;
-  font-weight: 600;
-}
-
-.info-box {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 25px;
-  color: black;
-}
-
-.info-box a {
-  color: #0d1a33;
-  text-decoration: none;
-}
-
-.info-box a:hover {
-  text-decoration: underline;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
+/* Caselle servizi - sfondo blu */
 .perizie-balistiche {
   background-color: #0d1a33; /* blu scuro */
-  color: white;
+  color: #ffffff; /* testo bianco */
   padding: 20px;
-  border-radius: 8px;
   margin-bottom: 30px;
+  border-radius: 8px;
 }
 
+/* Contenuto interno per layout immagine + testo */
 .perizie-content {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .perizie-content img {
-  max-width: 300px;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border: 3px solid #3a5fcd; /* bordo azzurro/blu chiaro intorno immagini */
   border-radius: 6px;
-  flex-shrink: 0;
-  border: 3px solid #4a6ef1; /* bordo blu chiaro */
-  box-shadow: 0 0 10px #4a6ef1aa;
+  object-fit: cover;
 }
 
 .perizie-content div {
-  flex-grow: 1;
-  font-size: 16px;
-  line-height: 1.5;
+  flex: 1 1 300px;
 }
 
-.perizie-content h3 {
-  margin-top: 0;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  font-weight: 700;
+/* Link nei servizi con colore azzurro chiaro */
+.perizie-balistiche a {
+  color: #a3c1f9;
+  text-decoration: underline;
 }
 
+/* Form e altre sezioni senza sfondo, testo nero */
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+form input, form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #0d1a33;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  max-width: 200px;
+  border-radius: 6px;
+}
+
+form button:hover {
+  background-color: #3a5fcd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .perizie-content {
     flex-direction: column;
@@ -98,77 +108,5 @@ section {
 
   .perizie-content img {
     max-width: 100%;
-    margin-bottom: 15px;
   }
-}
-
-button.button {
-  background-color: #2a3f75;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-button.button:hover {
-  background-color: #1d2c54;
-}
-
-footer {
-  text-align: center;
-  color: #555;
-  padding: 15px 0;
-  font-size: 0.9em;
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 15px;
-}
-
-label {
-  font-weight: 600;
-  color: black;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-  background-color: white;
-  color: black;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: 2px solid #2a3f75;
-  background-color: white;
-  color: black;
-}
-
-.social {
-  margin-top: 20px;
-  color: black;
-}
-
-.social a {
-  margin-right: 15px;
-  color: #0d1a33;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.social a:hover {
-  text-decoration: underline;
 }
