@@ -1,6 +1,6 @@
 body {
   background-color: #121212;
-  color: #e0e0e0;
+  color: #eeeeee;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -14,112 +14,82 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 40px;
-}
-
-header img {
-  max-width: 200px;
-  margin-bottom: 15px;
-}
-
-h1, h2, h3 {
-  color: #0b61d0; /* blu consistente */
-}
-
-.info-box {
-  background-color: #1f1f1f;
-  padding: 20px;
-  border-radius: 8px;
   margin-bottom: 30px;
 }
 
-.info-box h2 {
-  margin-top: 0;
+header img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-section {
+h1, h2, h3 {
+  color: #1e90ff; /* blu */
+}
+
+.info-box, section {
   margin-bottom: 40px;
 }
 
-.perizie-balistiche .perizie-content {
+.info-box p, section p, section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+.perizie-balistiche {
+  margin-bottom: 40px;
+}
+
+.perizie-content {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  margin-top: 15px;
 }
 
 .perizie-content img {
-  width: 280px;
-  max-height: 200px;
-  object-fit: cover;
-  border: 3px solid #0b61d0;
+  width: 250px;
+  height: auto;
+  border: 3px solid #1e90ff; /* blu */
   border-radius: 8px;
-  margin-top: 15px;
-  flex-shrink: 0;
+  object-fit: cover;
+  margin-top: 10px; /* spostata leggermente più in basso */
 }
 
 .perizie-content div {
   flex: 1;
+  color: #ccc;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background-color: #1f1f1f;
-  padding: 20px;
-  border-radius: 8px;
-  color: #e0e0e0;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  background-color: #2a2a2a;
-  color: #e0e0e0;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: 2px solid #0b61d0;
-}
-
-.button {
-  background-color: #0b61d0;
+button.button {
+  background-color: #1e90ff;
   color: white;
   border: none;
-  padding: 12px;
-  font-size: 1.1rem;
-  border-radius: 8px;
+  padding: 12px 25px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
-.button:hover {
-  background-color: #094a9c;
+button.button:hover {
+  background-color: #1c7ed6;
 }
 
-.social {
-  margin-top: 20px;
+.map-container iframe {
+  border: none;
+  border-radius: 8px;
 }
 
-.social h3 {
-  margin-bottom: 10px;
-}
-
+/* Social links */
 .social a {
-  color: #0b61d0;
-  text-decoration: none;
+  color: #1e90ff;
   margin-right: 15px;
-  font-weight: bold;
+  text-decoration: none;
 }
 
 .social a:hover {
@@ -128,9 +98,9 @@ textarea:focus {
 
 footer {
   text-align: center;
-  padding: 15px 0;
+  color: #666;
   font-size: 0.9rem;
-  color: #777;
+  padding: 15px 0;
   border-top: 1px solid #333;
-  margin-top: 40px;
+  margin-top: 50px;
 }
