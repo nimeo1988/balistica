@@ -1,272 +1,113 @@
-* {
+body {
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;
+  background-color: #121212;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #121212; /* Sfondo scuro leggermente più chiaro del #111 originale */
-  color: #e0e0e0;
-  line-height: 1.6;
-  padding: 20px;
 }
 
 .container {
-  max-width: 1000px;
-  margin: auto;
-  background-color: #1b1b1b;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-header {
-  text-align: center;
-  margin-bottom: 40px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header img {
   max-width: 150px;
-  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 10px;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #00aaff;
-}
-
-header p {
-  font-size: 1.1rem;
-  color: #ccc;
+h1, h2, h3 {
+  color: #f5a623; /* un arancio caldo per i titoli */
 }
 
 .info-box {
-  background-color: #2a2a2a;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
 }
 
-.info-box h2 {
-  color: #00aaff;
-  margin-bottom: 10px;
-}
-
-.info-box p a {
-  color: #00aaff;
-  text-decoration: none;
-}
-
-.info-box p a:hover {
-  text-decoration: underline;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  color: #00aaff;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
-}
-
-ul {
-  margin-left: 20px;
-}
-
-form label {
-  display: block;
-  margin: 10px 0;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  background: #2a2a2a;
-  border: 1px solid #444;
-  color: #e0e0e0;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.button {
-  display: inline-block;
-  background-color: #00aaff;
-  color: #fff;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  font-size: 1.1rem;
-}
-
-.button:hover {
-  background-color: #0088cc;
-}
-
-.social {
-  margin-top: 20px;
-}
-
-.social a {
-  color: #00aaff;
-  text-decoration: none;
-  margin-right: 15px;
-  font-weight: 600;
-}
-
-.social a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-  margin-top: 40px;
-}
-
-/* Google Maps */
-.map-container {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(0,170,255,0.6);
-  margin-bottom: 40px;
-}
-
-/* Nuovi stili per Perizie Balistiche Forensi */
 .perizie-balistiche {
-  margin-bottom: 40px;
-}
-
-.perizie-balistiche h2 {
-  color: #00aaff;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
 }
 
 .perizie-content {
   display: flex;
-  align-items: center;
   gap: 20px;
-  flex-wrap: nowrap; /* immagine e testo affiancati */
+  align-items: flex-start;
 }
 
 .perizie-content img {
   max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #f5a623a0;
   flex-shrink: 0;
 }
 
-.perizie-content p {
+.perizie-content div {
   flex: 1;
-  min-width: 250px;
-  color: #e0e0e0;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 0;
 }
 
-/* Stile per Ricostruzione di traiettorie e scene del crimine */
-.ricostruzione-traiettorie {
-  margin-bottom: 40px;
+a {
+  color: #f5a623;
+  text-decoration: none;
 }
 
-.ricostruzione-traiettorie h2 {
-  color: #00aaff;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
+a:hover {
+  text-decoration: underline;
 }
 
-.ricostruzione-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: nowrap; /* immagine e testo affiancati */
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #f5a623;
 }
 
-.ricostruzione-content img {
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
-  flex-shrink: 0;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
 }
 
-.ricostruzione-content p {
-  flex: 1;
-  min-width: 250px;
-  color: #e0e0e0;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 0;
+form textarea {
+  resize: vertical;
 }
 
-/* Nuova sezione Analisi su armi da fuoco e munizioni */
-.analisi-armi-munizioni {
-  margin-bottom: 40px;
+.button {
+  margin-top: 15px;
+  background-color: #f5a623;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-.analisi-armi-munizioni h2 {
-  color: #00aaff;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
+.button:hover {
+  background-color: #d18f00;
 }
 
-.analisi-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: nowrap; /* immagine e testo affiancati */
+.social a {
+  margin-right: 15px;
+  font-weight: bold;
 }
 
-.analisi-content img {
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
-  flex-shrink: 0;
-}
-
-.analisi-content p {
-  flex: 1;
-  min-width: 250px;
-  color: #e0e0e0;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .perizie-content,
-  .ricostruzione-content,
-  .analisi-content {
-    flex-wrap: wrap; /* su schermi piccoli, immagine sopra testo */
-  }
-
-  .perizie-content img,
-  .ricostruzione-content img,
-  .analisi-content img {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #777;
+  font-size: 0.9em;
 }
